@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<SalesWebMvc.Models.Seller> 
+
 @{
     ViewData["Title"] = "Sellers";
 }
@@ -27,7 +28,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
+         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -45,7 +46,7 @@
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a>
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
-        </tr>
+         </tr>
         }
     </tbody>
     
